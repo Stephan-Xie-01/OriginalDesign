@@ -1,7 +1,6 @@
 void setup()
 {
 	size(800, 600);
-	background(0, 0, 0);
 	frameRate(60);
 }
 
@@ -23,7 +22,7 @@ int drop = 400;
 
 void draw()
 {
-	
+	background(0, 0, 0);
 	car();
 	drops();
 	explosion();
@@ -74,11 +73,12 @@ void drops(){
 int explode = 0;
 void explosion(){
 
-	if(carX > 900){
-		explode += 50;
+	if(carX > 400){
+		explode = 0;
 	}
 	fill(250,250,250,30);
 	ellipse(800, 500, explode, explode);
+	explode += 10;
 	
 }
 
