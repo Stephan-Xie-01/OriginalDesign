@@ -78,6 +78,7 @@ void explosion(){
 	}
 	fill(250,250,250,30);
 	ellipse(800, 500, explode, explode);
+	ellipse(700, 600, explode, explode);
 	explode += 10;
 	
 }
