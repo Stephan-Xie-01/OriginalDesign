@@ -1,6 +1,7 @@
 void setup()
 {
 	size(800, 600);
+	background(0, 0, 0);
 	frameRate(60);
 }
 
@@ -22,10 +23,10 @@ int drop = 400;
 
 void draw()
 {
-	background(0, 0, 0);
+	
 	car();
 	drops();
-	explode();
+	explosion();
 	
 
 	//turning pt
@@ -71,7 +72,7 @@ void drops(){
 }
 
 int explode = 0;
-void explode(){
+void explosion(){
 
 	if(carX > 900){
 		explode += 50;
